@@ -147,28 +147,28 @@ $current_page = basename(dirname($_SERVER['PHP_SELF']));
 		</div>
 
 		<nav class="nav flex-column">
-			<a class="nav-link active" href="index.php">
+			<a class="nav-link active" href="/index.php">
 				<i class="bi bi-speedometer2"></i>
 				<span>Dashboard</span>
 			</a>
 			<?php if ($_SESSION['level'] == 'admin'): ?>
-				<a class="nav-link" href="admin/mahasiswa/index.php">
+				<a class="nav-link" href="/admin/mahasiswa/index.php">
 					<i class="bi bi-people-fill"></i>
 					<span>Data Mahasiswa</span>
 				</a>
-				<a class="nav-link" href="admin/dosen/index.php">
+				<a class="nav-link" href="/admin/dosen/index.php">
 					<i class="bi bi-person-badge-fill"></i>
 					<span>Data Dosen</span>
 				</a>
-				<a class="nav-link" href="admin/matkul/index.php">
+				<a class="nav-link" href="/admin/matkul/index.php">
 					<i class="bi bi-book-fill"></i>
 					<span>Data Matkul</span>
 				</a>
-				<a class="nav-link" href="admin/nilai/index.php">
+				<a class="nav-link" href="/admin/nilai/index.php">
 					<i class="bi bi-journal-check"></i>
 					<span>Data Nilai</span>
 				</a>
-				<a class="nav-link" href="admin/users/index.php">
+				<a class="nav-link" href="/admin/users/index.php">
 					<i class="bi bi-shield-lock-fill"></i>
 					<span>Manajemen User</span>
 				</a>
@@ -184,7 +184,7 @@ $current_page = basename(dirname($_SERVER['PHP_SELF']));
 				<i class="bi bi-shield-check me-1"></i>
 				<?= ucfirst(htmlspecialchars($_SESSION['level'])); ?>
 			</div>
-			<a href="auth/logout.php" class="btn btn-danger btn-sm w-100 mt-2">
+			<a href="/auth/logout.php" class="btn btn-danger btn-sm w-100 mt-2">
 				<i class="bi bi-box-arrow-right me-1"></i>Logout
 			</a>
 		</div>
