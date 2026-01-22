@@ -53,7 +53,7 @@ git clone https://github.com/Dunaman10/workshop_aslab.git
 ## Dokumentasi & Penjelasan Fungsi
 
 ### 1. Halaman Login
-*(Screenshot Halaman Login)*
+![Halaman Login](assets/login.png)
 > **Fungsi**: Halaman ini menjadi gerbang utama keamanan aplikasi.
 *   **Proses**: User memasukkan Username dan Password.
 *   **Logik**: Sistem memeriksa kecocokan data di tabel `users`.
@@ -61,13 +61,13 @@ git clone https://github.com/Dunaman10/workshop_aslab.git
 *   **Redirection**: Jika login sukses, user diarahkan ke dashboard sesuai level (Admin/Mahasiswa). Jika gagal, akan muncul notifikasi error.
 
 ### 2. Dashboard Utama
-*(Screenshot Dashboard)*
+![Dashboard Utama](assets/dashboard.png)
 > **Fungsi**: Pusat navigasi aplikasi.
 *   **Sidebar**: Menu di sebelah kiri bersifat dinamis. Admin melihat menu lengkap (Mahasiswa, Dosen, Nilai, User), sedangkan user biasa hanya melihat menu terbatas.
 *   **Session Info**: Menampilkan nama dan role user yang sedang login di pojok kiri bawah sidebar dan di banner selamat datang.
 
 ### 3. Manajemen Data Mahasiswa (CRUD)
-*(Screenshot Halaman Mahasiswa)*
+![Manajemen Data Mahasiswa](assets/mahasiswa.png)
 > **Fungsi**: Modul untuk mengelola data master mahasiswa.
 *   **Read (Tampil)**: Menampilkan daftar mahasiswa dalam tabel responsif dengan penomoran otomatis.
 *   **Create (Tambah)**: Tombol "Tambah Mahasiswa" membuka Modal Pop-up untuk input data baru (NIM, Nama, Prodi, Angkatan).
